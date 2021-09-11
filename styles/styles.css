@@ -1,0 +1,132 @@
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* -----BACKGROUND-SECTION----- */
+
+body{
+    background-color: var(--pale-blue);
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.background img{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+/* -----CARD-CENTER-POSITION----- */
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+/* -----CARD-SECTION----- */
+.card{
+    width: 26em;
+    height: 41em;
+    border-radius: 20px;
+    background-color: #fff;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2em 20px -15px var(--desaturated-blue);
+}
+.card img {
+    width: 100%;
+}
+/* introduction */
+.card h1{
+    padding-top: 1.25em;
+    font-size: 1.75em;
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+.card p{
+    width: 75%;
+    margin: 1em auto 1.25em;
+    line-height: 1.75;
+    color: var(--desaturated-blue);
+}
+/* your plan */
+.card .annual-plan{
+    display: flex;
+    align-items: center;
+    width: 67.5%;
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+    padding: 1.5em;
+    margin: 0 auto;
+}
+.annual-plan img{
+    height: 3em;
+    width: 3em;
+}
+.annual-plan .detail-option{
+    margin-left: 20px;
+}
+.detail-option .price{
+    font-weight: 500;
+    color: var(--desaturated-blue);
+    margin-top: 5px;
+}
+.annual-plan a{
+    color: var(--bright-blue);
+    font-weight: 900;
+    font-size: 1em;
+    margin-left: auto;
+}
+.annual-plan a:hover{
+    text-decoration: none;
+    color: var(--desaturated-blue);
+}
+/* payment confirm */
+.confirm h5{
+    background-color: var(--bright-blue);
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: .5px;
+    width: 67.5%;
+    padding: 1em 1.5em;
+    border-radius: 10px;
+    margin: 2em auto 2.5em;
+    box-shadow: 0 1.5em  15px var(--pale-blue);
+    cursor: pointer;
+}
+.confirm h5:hover{
+    background-color: var(--desaturated-blue);
+}
+.cancel h5{
+    display: inline;
+    font-weight: 900;
+    color: var(--desaturated-blue);
+    cursor: pointer;
+}
+.cancel h5:hover{
+    color: var(--dark-blue);
+}
+
+/* -----ATTRIBUTION-SECTION----- */
+.attribution{
+    padding: 15px 30px;
+    color: var(--dark-blue);
+    font-size: 1em;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.attribution a{
+    color: var(--desaturated-blue);
+    text-decoration: none;
+}
